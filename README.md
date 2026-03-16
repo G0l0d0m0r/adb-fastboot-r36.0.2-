@@ -18,9 +18,8 @@ ADB (Android Debug Bridge) и Fastboot — это два инструмента 
 Кратко: ADB нужен для управления телефоном, когда он работает как обычно.
 ### Основные доступные команды
 * `С:\platform-tools>adb --version` - версия программы ADB
-* `С:\platform-tools>Fastboot --version` - версия программы Fastboot
-* `adb reboot bootloader` - перезагрузка Android-устройства в режим bootloader/fastboot из включенного устройства: при активированной USB отладке
-* `adb reboot recovery` - перезагружает Android-устройство из работающей ОС прямо в режим recovery без нажатия кнопок.
+* `adb reboot bootloader` - перезагрузка Android-устройства из работающей ОС в режим bootloader/fastboot без нажатия кнопок (при активированной USB отладке)
+* `adb reboot recovery` - перезагружает Android-устройство из работающей ОС в режим recovery без нажатия кнопок (при активированной USB отладке).
 * `adb shell recovery --adbsideload` - включает режим ADB Sideload в recovery на Android-устройстве для установки ZIP-файлов (LineageOS, GApps, Magisk) с ПК без копирования на телефон.
 * `adb sideload rom.zip` - передаёт файл rom.zip (LineageOS, GApps, Magisk) с ПК в recovery по USB и автоматически устанавливает его на Android-устройство (daisy) в режиме ADB Sideload.
 * `adb sideload gapps.zip` - передаёт gapps.zip GApps с ПК в recovery по USB и устанавливает Google Apps (Play Store, Gmail, Maps, Play Services) после прошивки операционной системы 
@@ -36,6 +35,7 @@ ADB (Android Debug Bridge) и Fastboot — это два инструмента 
 * Сброс к заводским настройкам: Командой можно стереть все данные (wipe).
 Кратко: Fastboot нужен для изменения системного ПО (прошивки) и работы с «железом» на низком уровне.
 ### Основные доступные команды
+* `С:\platform-tools>Fastboot --version` - версия программы Fastboot
 * `fastboot devices` - проверка доступности Android-устройства
 * `fastboot oem unlock` - разблокировка загрузчика (все данные будут удалены)
 * `fastboot oem lock` - блокировка загрузчика
