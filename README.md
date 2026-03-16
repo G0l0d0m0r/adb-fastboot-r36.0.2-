@@ -16,6 +16,14 @@ ADB (Android Debug Bridge) и Fastboot — это два инструмента 
 * Расширенные команды: Например, сделать скриншот, записать видео экрана, перезагрузить устройство в определенный режим или узнать информацию о батарее и железе.
 * Создание бекапов: Некоторые программы используют ADB для создания полных резервных копий данных.
 Кратко: ADB нужен для управления телефоном, когда он работает как обычно.
+### Основные доступные команды
+* `С:\platform-tools>adb --version` - версия программы ADB
+* `С:\platform-tools>Fastboot --version` - версия программы Fastboot
+* `adb reboot bootloader` - перезагрузка Android-устройства в режим bootloader/fastboot из включенного устройства: при активированной USB отладке
+* `adb reboot recovery` - перезагружает Android-устройство из работающей ОС прямо в режим recovery без нажатия кнопок.
+* `adb shell recovery --adbsideload` - включает режим ADB Sideload в recovery на Android-устройстве для установки ZIP-файлов (LineageOS, GApps, Magisk) с ПК без копирования на телефон.
+* `adb sideload rom.zip` - передаёт файл rom.zip (LineageOS, GApps, Magisk) с ПК в recovery по USB и автоматически устанавливает его на Android-устройство (daisy) в режиме ADB Sideload.
+* `adb sideload gapps.zip` - передаёт gapps.zip GApps с ПК в recovery по USB и устанавливает Google Apps (Play Store, Gmail, Maps, Play Services) после прошивки операционной системы 
 
 ## 2. Fastboot
 Когда используется: 
@@ -27,8 +35,13 @@ ADB (Android Debug Bridge) и Fastboot — это два инструмента 
 * Восстановление «кирпича»: Если телефон перестал включаться из-за неудачной прошивки, Fastboot часто — единственный способ оживить его, заново залив системные разделы.
 * Сброс к заводским настройкам: Командой можно стереть все данные (wipe).
 Кратко: Fastboot нужен для изменения системного ПО (прошивки) и работы с «железом» на низком уровне.
-
-
+### Основные доступные команды
+* `fastboot devices` - проверка доступности Android-устройства
+* `fastboot oem unlock` - разблокировка загрузчика (все данные будут удалены)
+* `fastboot oem lock` - блокировка загрузчика
+* `fastboot getvar all | grep boot` - просмотр всех переменных fastboot, связанных с boot, выводит информацию о загрузочных слотах, версии ядра, состоянии boot-партиций на Android-устройстве
+* `fastboot reboot recovery` - перезагрузка Android-устройства из режима fastboot прямо в recovery без нажатия кнопок.
+* `fastboot flash boot boot.img` - запись предоставленного файла boot.img в раздел boot Android-устройства в режиме fastboot (bootloader), заменяя текущее ядро (kernel) и ramdisk.
 
 
 Разблокировка и блокировка загрузчика
