@@ -42,7 +42,8 @@ ADB (Android Debug Bridge) и Fastboot — это два инструмента 
 * `fastboot getvar all | grep boot` - просмотр всех переменных fastboot, связанных с boot, выводит информацию о загрузочных слотах, версии ядра, состоянии boot-партиций на Android-устройстве
 * `fastboot reboot recovery` - перезагрузка Android-устройства из режима fastboot прямо в recovery без нажатия кнопок.
 * `fastboot flash boot boot.img` - запись предоставленного файла boot.img в раздел boot Android-устройства в режиме fastboot (bootloader), заменяя текущее ядро (kernel) и ramdisk.
-
+* `fastboot flash boot_a boot.img` - запись предоставленного файла boot.img в раздел boot Android-устройства в режиме fastboot (bootloader), заменяя текущее ядро (kernel) и ramdisk в раздел a (при условии поддержки устройством бесшовных обновлений).
+* `fastboot flash boot_b boot.img` - запись предоставленного файла boot.img в раздел boot Android-устройства в режиме fastboot (bootloader), заменяя текущее ядро (kernel) и ramdisk в раздел a (при условии поддержки устройством бесшовных обновлений).
 
 Разблокировка и блокировка загрузчика
 
