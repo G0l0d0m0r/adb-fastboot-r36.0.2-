@@ -9,11 +9,11 @@ ADB (Android Debug Bridge) и Fastboot — это два инструмента 
 [3. Разблокировка и блокировка загрузчика](#chapter-2)
 
 Скачать:  
-💾 [tools_r33.0.1-windows.zip](https://github.com/G0l0d0m0r/adb-fastboot-r36.0.2-/raw/refs/heads/main/Platform-tools+r36.0.2-windows.zip)  
-💾 [tools_r33.0.1-macosx.zip](https://github.com/G0l0d0m0r/adb-fastboot-r36.0.2-/raw/refs/heads/main/Platform-tools+r36.0.2-windows.zip)  
-💾 [tools_r33.0.1-linux.zip](https://github.com/G0l0d0m0r/adb-fastboot-r36.0.2-/raw/refs/heads/main/Platform-tools+r36.0.2-windows.zip)  
+💾 [tools_r33.0.1-windows.zip](https://github.com/G0l0d0m0r/ADB-Fastboot/raw/refs/heads/main/tools_r33.0.1-windows.zip)  
+💾 [tools_r33.0.1-macosx.zip](https://github.com/G0l0d0m0r/ADB-Fastboot/raw/refs/heads/main/tools_r33.0.1-macosx.zip)  
+💾 [tools_r33.0.1-linux.zip](https://github.com/G0l0d0m0r/ADB-Fastboot/raw/refs/heads/main/tools_r33.0.1-linux.zip)  
 USB Driver:  
-💾 [usb_driver_r13-windows.zip](https://github.com/G0l0d0m0r/adb-fastboot-r36.0.2-/raw/refs/heads/main/Platform-tools+r36.0.2-windows.zip)
+💾 [usb_driver_r13-windows.zip](https://github.com/G0l0d0m0r/ADB-Fastboot/raw/refs/heads/main/usb_driver_r13-windows.zip)  
 
 
 <a id="chapter-0"></a>
